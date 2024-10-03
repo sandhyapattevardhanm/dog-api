@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <p class="text-black"><strong>Hypoallergenic:</strong> ${breed.attributes.hypoallergenic ? 'Yes' : 'No'}</p>
   
               <p class="text-black"><strong>Relationships:</strong></p>
-              <p class="text-black"><strong>ID:</strong> ${breed.attributes.relationships?.group?.data?.id || 'N/A'}</p>
-              <p class="text-black"><strong>Type:</strong> ${breed.attributes.relationships?.group?.data?.type || 'N/A'}</p>
+              <p class="text-black"><strong>Group ID:</strong> ${breed.relationships?.group?.data?.id || 'N/A'}</p>
+              <p class="text-black"><strong>Group Type:</strong> ${breed.relationships?.group?.data?.type || 'N/A'}</p>
             </div>
           `;
           cardContainer.innerHTML += card;
